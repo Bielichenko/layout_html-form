@@ -8,14 +8,6 @@
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
 .formField:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.formField:last-child {
-  margin-bottom: 0;
 }

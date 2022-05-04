@@ -11,123 +11,117 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
-      <fieldset name="firstBlock" class="block">
+      <fieldset class="block">
         <legend>Personal information</legend>
 
         <label class="formField">
-        Surname: <input
-        type="text"
-        name="Surname"
-        autocomplete="off"
-        class="info"
-        >
-        </label>
-
-        <label class="formField">
-          Name: <input
-          type="text"
-          name="Name"
-          autocomplete="off"
-          class="info"
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            autocomplete="off"
           >
         </label>
 
         <label class="formField">
-          How old are You? <input
-          type="number"
-          name="Age"
-          min="1"
-          max="100"
-          value="12"
-          class="info"
+          Name:
+          <input
+            type="text"
+            name="name"
+            autocomplete="off"
+          >
+        </label>
+
+        <label class="formField">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            min="1"
+            max="100"
+            value="12"
         >
         </label>
 
         <label class="formField">
-          Full date of bitrh: <input
-          type="date"
-          name="DateOfBirth"
-          class="info"
+          Full date of bitrh:
+          <input
+            type="date"
+            name="dateOfBirth"
           >
         </label>
 
         <label class="form-field">
-          I accept the term of the agreement<input type="checkbox"
-          name="terms"
-          class="info"
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="terms"
           >
         </label>
 
       </fieldset>
 
-      <fieldset name="secondBlock" class="block">
+      <fieldset class="block">
         <legend>Registration</legend>
-
         <label class="formField">
-        E-mail: <input
-        type="email"
-        placeholder="email@example.com"
-        name="email"
-        required
-        class="info"
-        >
+          E-mail:
+          <input
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+            required
+          >
         </label>
 
         <label class="formField">
-          Password: <input
-          type="password"
-          name="Password"
-          required
-          minlength="5"
-          maxlength="25"
-          class="info"
-        >
+          Password:
+          <input
+            type="password"
+            name="password"
+            required
+            minlength="5"
+            maxlength="25"
+          >
         </label>
-
       </fieldset>
 
-      <fieldset name="thirdBlock" class="block">
+      <fieldset class="block">
         <legend>An interesting fact about you!</legend>
-
         <div class="formField">
         Do you love cats?
-
-          <label class="inline formField">
+          <label>
             <input
-            type="radio"
-            name="lowesCats"
-            class="info"
+              type="radio"
+              name="lowesCats"
             > Yes
           </label>
 
-          <label  class="inline formField">
+          <label>
             <input
-            type="radio"
-            name="lowesCats"
-            class="info"
-            > No
+              type="radio"
+              name="lowesCats"
+            >
+            No
           </label>
-
         </div>
 
         <label class="formField">
-          What is your favorite color? <input
-          type="color"
-          name="FavoriteColor"
-          class="info"
+          What is your favorite color?
+          <input
+            type="color"
+            name="favoriteColor"
           >
         </label>
 
         <label class="formField">
-          What time do you go to bed? <input
-          type="time"
-          name="TimeToBadAt"
-          class="info"
+          What time do you go to bed?
+          <input
+            type="time"
+            name="timeToBadAt"
           >
         </label>
 
@@ -141,44 +135,34 @@
         </label>
 
         <label class="formField">
-          How do you rate our work? <input
-          type="range"
-          name="RateOfWork"
-          value="0"
-          class="info"
+          How do you rate our work?
+          <input
+            type="range"
+            name="rateOfWork"
+            value="0"
           >
         </label>
-
       </fieldset>
 
-      <fieldset name="fourthBlock" class="block">
+      <fieldset class="block">
         <legend>Additional info:</legend>
-
         <label class="formField">
-        Comments:
-          <textarea ></textarea>
+          Comments:
+          <textarea name="comments"></textarea>
         </label>
 
-        <label class="formField" name="Recommendation">
+        <label class="formField" name="recommendation">
           Would you recommend us?
-          <select class="info">
+          <select>
             <option>yes</option>
             <option>no</option>
           </select>
         </label>
-
       </fieldset>
 
-      <button
-      name="fifthBlock"
-      type="submit"
-      class="block"
-      >
-      Submit
+      <button type="submit" class="block">
+        Submit
       </button>
-
     </form>
-
-
   </body>
 </html>
